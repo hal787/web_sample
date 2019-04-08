@@ -1,0 +1,22 @@
+#! /usr/bin/python36
+import os, cgi,re
+
+print ("Content-type: text/html; charaset=utf-8\n")
+query = os.environ['QUERY_STRING']
+#print(eval(query))
+
+judge1 = "+"
+judge2 = "-"
+judge3 = "*"
+judge4 = "/"
+
+if judge1 in query:
+   print(int(eval(query)))
+elif judge2 in query:
+   print(int(eval(query)))
+elif judge3 in query:
+   print(int(eval(query)))
+elif judge4 in query:
+   print(int(eval(query)))
+else:
+    print("ERROR")
